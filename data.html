@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Analysis</title>
+	<link rel="stylesheet" href="data.css">
+</head>
+<body>
+	<h1>Data Analysis</h1>
+	<p class="special">Here you can learn how to analyze your research data using Excel and PASW software.</p>
+
+	<section>
+		<h2>Organizing and Analyzing Research Data</h2>
+	<aside>
+		<p><strong>For this lesson, you'll need the following:</strong></p>
+		<ul>
+			<li>Microsoft Excel</li>
+			<li>PASW (formerly SPSS) statistics software, or free trial download</li>
+		</ul>
+		<p><strong>You should already be familiar with:</strong></p>
+		<ul>
+			<li>The basic functions and tools of Excel</li>
+			<li>Descriptive statistics and inferential statistics</li>
+			<li>Research design and how to identify independent variables and dependent variables</li>
+		</ul>
+	</aside>
+		
+		<p>This short lesson is intended for graduate and advanced undergraduate students undertaking original research projects. After completing the 30-minute lesson, you will be able to:</p>
+		<ul>
+			<li>Format raw research data in an Excel spreadsheet for efficient analysis</li>
+			<li>Run basic descriptive statistics in Excel</li>
+			<li>Prepare the document for statistical analysis in the software package PASW</li>
+		</ul>
+			<h3>Format Data for Analysis</h3>
+				<p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <em>ToolBox_DataLesson.xls</em> in Excel and follow along with the lesson, taking action as instructed.</p>
+			<p>In the <em>Raw_Dataset</em> spreadsheet, the name of each variable has been entered in the first row of each column.</p>
+			<p>Each variable name must be different from other variable names.</p>
+			<p>The first variable (in column A) is a unique identifier.</p>
+			<p>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types</em> to <em>tutorial_types</em>.</p>
+			<p>Name variables so that they are intuitive to you. Therefore, change <em>use</em> and <em>useful</em> to <em>perc_ease_of_use</em> and <em>perc_usefulness</em>, respectively.</p>
+			<p>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to Perceived Usefulness and Column G refers to Perceived Ease of Use.</p>
+		
+		<figure>
+			<img src="illustrations/datalesson_fig3.png" alt="Screenshot of Excel spreadsheet">
+			<figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+		</figure>
+			
+			<p>Data values, or rows, have been input for each subject in the experiment.</p>
+			<p>Decide on input conventions and stick to them. In gender, change the "female" value to "F".</p>
+			<p>Separate data into component values whenever possible by adding new columns. For example, tasks_completed values (Y/Y/N) can be broken up into three components. So, add columns task1, task2, and task3, and reformat values appropriately.</p>
+			<p>Double-check to ensure no data entry errors have been made, then delete the old tasks_completed column.</p>
+			<p>Your <em>Raw_Dataset</em> spreadsheet should now look like Figure 2.</p>
+		
+		<figure>
+			<img src="illustrations/datalesson_fig2.png" alt="Screenshot of Excel spreadsheet">
+			<figcaption>Values for each variable are entered in a consistent format.</figcaption>
+		</figure>
+			
+			<p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values dichotomous, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
+		
+		<aside>
+			<p><strong>Dichotomous variables</strong> allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</p>
+		</aside>
+
+			<p>Copy the <em>Raw_Dataset</em> values into the Sheet2 tab. Rename this sheet <em>Formatted_Data</em>.</p>
+			<p>In the <em>Formatted_Data</em> sheet, add new columns with Insert > Columns for each distinct value in categorical data columns (<em>tutorial_types</em>, <em>gender</em>, <em>exp_level</em>, <em>task1</em>, <em>task2</em>, and <em>task3</em>). You do not have to add a new column for <em>task1</em>, <em>task2</em>, and <em>task3</em> because their values are already dichotomous.</p>
+			<p>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</p>
+			<p>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: Edit > Replace.</p>
+			<p>Your <em>Formatted_Data</em> spreadsheet should now look like Figure 3.</p>
+
+		<figure>
+			<img src="illustrations/datalesson_fig3 (1).png" alt="Screenshot of Excel spreadsheet">
+			<figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+		</figure>
+
+			<p>Copy the <em>Raw_Dataset</em> values into the Sheet2 tab. Rename this sheet <em>Formatted_Data</em>.</p>
+			<p>In the <em>Formatted_Data</em> sheet, add new columns with <em>Insert > Columns</em> for each distinct value in categorical data columns (<em>tutorial_types</em>, <em>gender</em>, <em>exp_level</em>, <em>task1</em>, <em>task2</em>, and <em>task3</em>). You do not have to add a new column for <em>task1</em>, <em>task2</em>, and <em>task3</em> because their values are already dichotomous.</p>
+			<p>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</p>
+			<p>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <em>Edit > Replace</em>.</p>
+			<p>Your <em>Formatted_Data</em> spreadsheet should now look like Figure 3.</p>
+		
+		<figure>
+			<img src="illustrations/datalesson_fig3 (1).png" alt="Screenshot of Excel spreadsheet">
+			<figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+		</figure>
+
+			<p>Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</p>
+			<p>You have now successfully formatted your research data for analysis. In the next lesson, we will cover basic descriptive statistics in Excel.</p>
+	
+	</section>
+
+</main>
+
+</body>
+</html>
